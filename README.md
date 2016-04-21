@@ -34,3 +34,11 @@ To run the playbook:
 	cd ansible
 	ansible-playbook hello.yml -i hosts/local
 
+
+To check it has worked, log in to the VM
+
+	cd vagrant
+	vagrant ssh
+	ls /
+
+You should see the hello-world.txt file in the root dir
