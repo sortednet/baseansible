@@ -1,0 +1,6 @@
+- name: file is present
+  copy:
+    src: hello-world.txt
+    dest: /hello-world.txt
+    mode: 0666
+

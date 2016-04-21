@@ -1,0 +1,19 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+### config.vm.box = "ubuntu/wily64"
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "ubuntu/wily64"
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 1512
+  end
+
+  config.vm.define "testvm" do |d|
+    d.vm.hostname = "testvm"
+    d.vm.network "private_network", ip: "10.100.192.200"
+    d.vm.provision :shell, path: "setup-ssh.sh"
+  end
+
+end

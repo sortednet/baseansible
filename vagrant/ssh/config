@@ -1,0 +1,6 @@
+Host *.docker-swarm.lab49.com
+User ansible
+UserKnownHostsFile /dev/null
+StrictHostKeyChecking no
+Compression yes
+IdentityFile ~/.ssh/ansible_id

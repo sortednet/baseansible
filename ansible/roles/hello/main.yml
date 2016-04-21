@@ -1,0 +1,3 @@
+files_to_copy: [
+  { src: "hello-world.txt", dest: "/data/scripts/swarm_get_ip.sh" }
+]
